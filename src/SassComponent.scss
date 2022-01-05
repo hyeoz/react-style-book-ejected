@@ -2,6 +2,10 @@
 
 .SassComponent {
   display: flex;
+  background: $oc-gray-2;
+  @include media("<768px") {
+    background: $oc-gray-9;
+  }
   .box {
     // 일반 css 파일에서는 .SassComponent .box 와 같은 의미
     background: red;
